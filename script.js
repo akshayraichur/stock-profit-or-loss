@@ -22,6 +22,7 @@ const App = () => {
       let profitPercentage = (profitValue / initial) * 100;
       message = `Yay! 💸 You made a profit of Rs ${profitValue}, ${profitPercentage}% returns 📈`;
       result.classList.add('profit');
+      result.classList.remove('loss');
     } else if (difference === 0) {
       message = `You have made no progress, time to re-evaluate your stock choice.`;
     } else {
@@ -35,6 +36,7 @@ const App = () => {
       }
 
       result.classList.add('loss');
+      result.classList.remove('profit');
     }
 
     result.textContent = message;
