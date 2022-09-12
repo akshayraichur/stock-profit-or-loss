@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profit or Loss</title>
+
+    <link
+      rel="shortcut icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤑</text></svg>"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤑</text></svg>"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main-container">
+      <h1 class="heading">💰 Where's my stonks? 💰</h1>
+      <h3 class="description">Stock Profit 📈 & Loss 📉 Calculator</h3>
+      <section class="container">
+        <div class="input-container">
+          <h2 class="text-center">Add stock details here 👇</h2>
+          <h3>Initial Price</h3>
+          <input
+            type="number"
+            placeholder="Initial stock price.."
+            class="input initial-price"
+          />
+
+          <h3>Quantity of Stocks</h3>
+          <input
+            type="number"
+            placeholder="Quantity of stocks.."
+            class="input quantity"
+          />
+
+          <h3>Current Price</h3>
+          <input
+            type="number"
+            placeholder="Current price.."
+            class="input current-price"
+          />
+
+          <div class="button-container">
+            <button class="calculate-btn">Lemme know</button>
+          </div>
+        </div>
+        <div class="result-container">
+          <h2 class="result"></h2>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
