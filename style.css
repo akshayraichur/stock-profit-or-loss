@@ -82,6 +82,10 @@ body {
   color: rgb(255, 84, 84);
 }
 
+.result {
+  padding: 1rem;
+}
+
 @media only screen and (min-width: 701px) and (max-width: 900px) {
   .container {
     flex-direction: column;
