@@ -15,6 +15,19 @@ const App = () => {
     let quantity = parseFloat(quantityPrice.value);
     let current = parseFloat(currentPrice.value);
 
+    if (
+      initial <= 0 ||
+      quantity <= 0 ||
+      current < 0 ||
+      isNaN(initial) ||
+      isNaN(quantity) ||
+      isNaN(current)
+    ) {
+      result.textContent = 'Please give appropriate input values';
+      result.classList.add('loss');
+      return;
+    }
+
     let message = '';
     let difference = current - initial;
     if (difference >= 1) {
